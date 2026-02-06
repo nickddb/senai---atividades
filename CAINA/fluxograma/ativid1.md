@@ -1,4 +1,4 @@
-```Mermaid
+```mermaid
     flowchart TD
 %% TD = Top to bottom ^
         start((inicio)) --> input[\Digite sua nota\] 

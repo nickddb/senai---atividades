@@ -1,5 +1,5 @@
-```Mermaid
-    flowchart TD
+```mermaid
+    flowchart TDs
 %% TD = Top to down(bottom) ^
 
         start((inicio)) --> input[\Digite sua nota e sua frequência\] 
