@@ -6,6 +6,6 @@
      verification --> |Sim| S[\O número é primo\]
      verification --> |Não| N[\O número não é primo\]
 
-     S --> finish([Fim])
+     S --> finish(( Fim ))
      N --> finish 
 ```
