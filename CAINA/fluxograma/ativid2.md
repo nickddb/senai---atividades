@@ -1,7 +1,7 @@
 ```mermaid
     flowchart TD
 %% TD = Top to down(bottom) ^
-
+        
         start([inicio]) --> input[\Digite sua nota e sua frequência\] 
 
 %%(()) == círculo

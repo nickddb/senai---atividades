@@ -1,7 +1,7 @@
 ```mermaid
     flowchart TD
 
-    start([inicio]) --> input[/Digite a idade de uma pessoa/]
+    start([inicio]) --> input[\Digite a idade de uma pessoa\]
     input --> verification{Idade ≥ 18?}
 
     verification --> |Sim| A[/ Pode votar /]

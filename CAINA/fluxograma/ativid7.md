@@ -1,7 +1,7 @@
 ```mermaid
     flowchart TD
     
-    start((inicio)) --> input[/Digite os números 1, 2 e 3/]
+    start((inicio)) --> input[\Digite os números 1, 2 e 3\]
     input --> verification{Num 1 > num 2 & num 1 > num 3 ?} 
 
     verification --> |Sim| U[\Num 1 é o maior número\]

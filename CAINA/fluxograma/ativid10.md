@@ -1,6 +1,6 @@
 ```mermaid
     flowchart TD
-    start((inicio)) --> input[/Digite um numero/]
+    start((inicio)) --> input[\Digite um numero\]
     input --> verification{num % num == 1 & num % 1 == num?}
 
      verification --> |Sim| S[\O número é primo\]

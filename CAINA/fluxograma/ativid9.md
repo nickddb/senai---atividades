@@ -1,8 +1,8 @@
 ```mermaid
     flowchart TD
-    start((inicio)) --> input[/Digite um número/]
+    start((inicio)) --> input[\Digite um número\]
     input --> verification{num % 2 == 0?}
- 
+
      verification --> |Sim| S[\O número é par\]
      verification --> |Não| N[\O número é ímpar\]
 
