@@ -1,7 +1,8 @@
 ```mermaid
     flowchart TD
     start([inicio]) --> input[\Digite um número\] 
-    input --> fat[Res = 1]
+    input --> fat[Res = 1
+    N = Número digitado]
     fat --> verification{ N > 1?}
 
     verification --> |Sim| f[Res = Res * N]
