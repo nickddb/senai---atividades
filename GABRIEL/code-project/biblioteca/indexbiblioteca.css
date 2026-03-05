@@ -1,0 +1,118 @@
+.cabecalho{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2vh 0;
+}
+.itens{
+    display: flex;
+    gap: 25px;
+}
+.botao{
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    background-color: #BE580F;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+}
+
+.cabecalho img{
+    width: 200px;
+}
+
+.hero{
+    width: 100vw;
+    height: 98vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-image: url("assets/fundo.jpeg");
+    flex-direction: column;
+    gap: 10px;
+}
+
+.hero h1{
+    color: white;
+    font-weight: 800;
+    font-size: 4rem;
+}
+.hero p{
+    color: white;
+}
+*{
+    margin:0;
+}
+.pesquisa{
+    padding: 1vh 2vw;
+    border: none;
+    outline: #BE580F;
+    font-size: 1rem;
+    border-radius: 10px;
+    width: 400px;
+}
+.input_container{
+    padding: 2vw;
+    border-radius: 20px;
+    background-color: rgba(207, 197, 178, 0.445);
+}
+.livros{
+    height: 100vh;
+    padding: 2vw;
+    background-color: rgb(231, 230, 226);
+}
+.card{
+    background-color: white;
+    width: 170px;
+    height: 430px;
+    border-radius: 15px;
+    padding: 0 2vw;
+    display: flex;
+    justify-content:space-around;
+    margin: 0 5vw 0 1vw;
+}
+
+.livros p{
+    color: #BE580F;
+    display: flex-start;
+    font-size: 1rem;
+}
+.ver_mais{
+    display: flex;
+    justify-content: space-between;
+    padding:3vw 2vw;
+    align-items: center;
+}
+.ver_mais h3{
+    color: #BE580F;
+    font-size: 1rem;
+}
+.carrd{
+    display: flex;
+    justify-content: space-around;
+}
+.card-livros p{
+    justify-self: center;
+    background-color: #fce1cea8;
+    color: #BE580F;
+    font-weight: 800;
+    padding: 1vh 5vw;
+    border-radius: 10px;
+}
+.titulo{
+    color: black;
+    padding: 0 0 1vh;
+    font-size: 1.3rem;
+}
+.autor{
+    font-size: 1rem;
+    padding: 0 0 2vw;
+}
+.card-livros img{
+    width: 150px;
+    border-radius: 10px;
+    padding: 2vw 0;
+    display: block;
+    margin: auto;
+}

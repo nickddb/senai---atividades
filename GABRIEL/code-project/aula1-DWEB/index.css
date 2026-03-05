@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+}
+.titulos{
+    color: blue;
+    background-color: gainsboro;
+}
+.cabecalho{
+    display: flex;
+    justify-content: space-around;
+    height: 60px;
+    border-bottom: 2px solid;
+    align-items: center;
+    border-color: crimson;
+}
+.hero{
+    display: flex;
+    justify-content: center;
+    height: 500px;
+    align-items: center;
+}
+.descricao{
+    width: 350px;
+}
+.hero_imagem{
+    width: 350px;
+    background-color: rgb(198, 186, 186);
+    height: 350px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo_senai{
+    height: 60px;
+    width: 150px;
+}
+.sobre_nos{
+    background-color: crimson;
+    color: white;
+    justify-content:flex-end;
+    height: 300px;
+}
+.h3{
+   text-align: center;
+    padding: 20px;
+}
+.sobre{
+    columns: 2;
+    padding: 30px;
+}
