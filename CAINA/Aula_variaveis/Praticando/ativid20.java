@@ -2,16 +2,17 @@ package Praticando;
 
 import java.util.Scanner;
 
-public class ativid20    {
+public class ativid20{
     public static void main(String[] args) {
         double a, b, c, delta, x1, x2;
-        System.out.println("Digite a, b e c separados por espaço: ");
+        System.out.println("Digite as raízes de uma equação do segundo grau: ");
 
         Scanner in = new Scanner(System.in); 
 
-        a = in.nextDouble();
-        b = in.nextDouble();
-        c = in.nextDouble();
+        x1 = in.nextDouble();
+        x2 = in.nextDouble();
+
+         
 
         System.out.printf("%.0fx² + %.0fx + %.0f = 0\n", a, b, c);
 
