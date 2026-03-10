@@ -10,19 +10,17 @@ public class ex5_lista3{
 
         double media = n1 + n2/ 2;
 
-        if (media >= 50){
-            System.out.println("APROVADO!");
+        if (media >= 8.5){
+            System.out.println("Conceito A");
         }
-        else{
-            System.out.println("REPROVADO! Entre com a nota da recuperação");
-            double n3 = in.nextDouble();
-            double new_media = n1 + n2 + n3 / 3;
-            if(new_media < 50)
-                System.out.println("REPROVADO!");
-            else
-                System.out.println("APROVADO!");
-
-            in.close();
+        else if (media < 8.5 && media >= 7){
+            System.out.println("Conceito B");
+        }
+        else if(media < 7 && media >= 5){
+            System.out.println("Conceito C");
+        }
+        else if(media < 5){
+            System.out.println("Conceito D");
         }
     }
 }

@@ -1,7 +1,7 @@
 package Praticando;
 import java.util.Scanner;
 
-public class ex3_lista3{
+public class ex15_lista3{
     public static void main(String[] args) throws Exception{
         Scanner in = new Scanner(System.in);
 
