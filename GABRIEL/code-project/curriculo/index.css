@@ -1,11 +1,26 @@
 .header{
-    background-color: #6C5C4D;
+    background-color: #3B3734;
     color: white;
     display: flex;
     justify-content: space-around;
     height: 50px;
     align-items: center;
     font-size: 10px;
+}
+
+.header a{
+    text-decoration: none;
+    color: white;
+}
+
+.header a:hover{
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+.header a:not(hover){
+    transform: scale(1);
+    transition: 0.5s;
 }
 
 
@@ -37,9 +52,8 @@
 }
 
 .perfil-foto {
-    width: 300px;
+    width: 450px;
     height: 450px;
-    padding-right: 70px;
     padding-top: 90px;
     position: relative;
 }
@@ -56,7 +70,6 @@
 .perfil-textos h2{
     font-weight: lighter;
     align-items: center;
-    padding-left: 80px;
 }
 
 
@@ -65,35 +78,62 @@
 }
 
 
-footer{
-    background-color: #3B3734;
-    color: #AD9883;
-    padding: 40px;
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
 }
 
-.email{
-    justify-items: center;
+@keyframes fadein{
+    from{
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
 }
+
+.certf-fotos, .certificacoes h1{
+    animation: appear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+.perfil img, .perfil-textos{
+    animation: fadein 1s ease-in;
+}
+
 
 
 .certificacoes h1{
     justify-self: center;
-    padding-top: 30px;
+    padding-top: 2em;
     font-weight: bold;
+    color: #6C5C4D;
+    font-size: 3em;
 }
 
 .certificacoes-fotos img{
-    height: 130px;
-    width: 200px;
-    padding: 10px;
-
+    height: 110px;
+    width: 180px;
+    border-bottom: 1em;
+    border-style: solid;
+    border-color: #6C5C4D;
+    padding: 10e;
 }
 .certificacoes-fotos{
     display: grid;
     justify-content: space-around;
     grid-template-columns: auto auto;
     grid-template-rows: auto auto auto;
-    padding: 20px 0 ;
+    padding: 10em 0 ;
 }
 .certificacoes-fotos img:last-child{
     grid-column: 1 / span 2;
@@ -103,25 +143,38 @@ footer{
     width: 300px;
 }
 
+
+
 .portfolio{
-    padding: 2rem;
+    justify-items: center;
+    padding: 1rem;
+    background-color: #F9F3E7;
+    height: 37em;
 }
 
 .carrossel{
+    padding-top: 3em;
     position: relative;
     max-width: 48rem;
 }
 .portfolio-carrossel{
+    border-radius: 5px;
     display: flex;
     aspect-ratio: 16/9;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
-    box-shadow: 0 1.5rem 3rem -0.75rem #3B3734;
+    box-shadow: 0 0.5rem 3rem -0.75rem #3B3734;
 }
 .portfolio-carrossel img{
+    width: 30em;
+    object-fit: cover;
     flex: 1 0 100%;
     scroll-snap-align: start;
+}
+
+.portfolio-carrossel::-webkit-scrollbar{
+    display: none;
 }
 
 .nav{
@@ -130,7 +183,7 @@ footer{
     position: absolute;
     bottom: 1.25rem;
     left: 50%;
-    transform: translateX(-50);
+    transform: translateX(-50%);
     z-index: 1;
 }
 
@@ -138,7 +191,9 @@ footer{
     width: 0.5rem;
     height: 0.5rem;
     border-radius: 50%;
-    background-color: #AD9883;
+    background-color: #3B3734;
+    border: solid;
+    border-color: #6C5C4D;
     opacity: 0.75;
     transition: opacity ease 250ms;
 }
@@ -146,91 +201,60 @@ footer{
 .nav a:hover{
     opacity: 1;
 }
-
-
-
-
-
-
-
-/*.portfolio{
-    width: 100%;
-    overflow: auto;
-    padding-top: 50px;
-    display: flex;
-    gap: 1em;
-    scroll-behavior: smooth;
-    anchor-name: --portfolio;
-    scroll-snap-type: x mandatory;
-    scroll-marker-group: after;
-}
-
-.portfolio::scroll-marker-group{
-    display: flex;
-    justify-content: center;
-    gap: .5em;
-}
-
-.portfolio-carrossel::scroll-marker{
-    content: '';
-    height: 1em;
-    width: 1em;
-    background-color: #3B3734;
-    border-radius: 50%;
-}
-
-.portfolio-carrossel::scroll-marker:target-current{
-    background-color:#AD9883;
-}
-
-.portfolio::-webkit-scrollbar{
-    display: none;
-}
-
-.portfolio::scroll-button(direita), .portfolio::scroll-button(esquerda){
-    content: '>';
-    border: none;
-    font-size: 3rem;
-    height: 60px;
-    width: 60px;
-    border-radius: 50%;
-    padding-bottom: .1em;
-    cursor: pointer;
-    position: fixed;
-    position-anchor: --portfolio;
-    position-area: right center;
-    translate: -50%;
-}
-
-.portfolio::scroll-button(esquerda){
-    content: '<';
-    position-area: left center;
-    translate: 50%;
-}
-
-.portfolio::scroll-button(direita):disabled, .portfolio::scroll-button(esquerda):disabled{
-    opacity: 0.5;
-    cursor: auto;
-
-}
-
-.portfolio-carrossel{
-    scroll-snap-align: start;
-    flex: 0 0 20em;
-    background-color: #F9F3E7;
-    height: 12em;
-    padding: 1em;
-    border-radius: .5em;
-    text-align: center;
-    align-content: center;
-}
-
-.portifolio{
-    background-color: #F9F3E7;
-    height: 400px;
-}
-
-.portifolio h1{
+.portfolio-texto{
     justify-self: center;
     padding: 30px 0 0 0;
-}*/
+    color: #6C5C4D;
+    font-size: 3rem;
+    position: relative;
+}
+
+.portfolio-texto::after{
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    height: 4px;
+    width: 100%;
+    left: 0;
+    background-color: #6C5C4D;
+    transition: 0.3s;
+    transition-timing-function: ease-in-out;
+    transform: scaleX(0);
+}
+
+.portfolio-texto:hover::after{
+    transform: scaleX(1);
+}
+
+footer{
+    background-color: #3B3734;
+    color: #AD9883;
+    padding: 40px;
+}
+
+.footer-icons{
+    display: flex;
+    justify-content: center;
+    padding: 2em 0;
+    gap: 2em;
+}
+
+.email{
+    justify-items: center;
+}
+
+.footer h3{
+    justify-self: center;
+    font-weight: lighter;
+}
+
+.footer h2{
+    padding-top: 0.5em;
+    font-weight: lighter;
+}
+
+.footer img{
+    height: 3em;
+    width: 3em;
+    aspect-ratio: 1;
+}
