@@ -13,10 +13,10 @@ public class ex5_lista3{
         if (media >= 8.5){
             System.out.println("Conceito A");
         }
-        else if (media < 8.5 && media >= 7){
+        else if (media >= 7){
             System.out.println("Conceito B");
         }
-        else if(media < 7 && media >= 5){
+        else if(media >= 5){
             System.out.println("Conceito C");
         }
         else if(media < 5){

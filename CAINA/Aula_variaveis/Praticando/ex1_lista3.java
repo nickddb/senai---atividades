@@ -13,5 +13,6 @@ public class ex1_lista3{
         else{
             System.out.println("Valor inválido!");
         }
+        in.close();
     }
 }

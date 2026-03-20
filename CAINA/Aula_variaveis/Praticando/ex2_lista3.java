@@ -17,5 +17,6 @@ public class ex2_lista3{
         else{
             System.out.println("Ambos os números são iguais");
         }
+        in.close();
     }
 }

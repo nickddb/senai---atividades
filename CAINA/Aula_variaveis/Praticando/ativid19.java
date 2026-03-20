@@ -23,5 +23,6 @@ public class ativid19 {
         x2 = (-b - Math.sqrt(delta))/2*a;
 
         System.out.printf("\nX1 = %.1f\nX2 = %.1f", x1, x2);
+        in.close();
     }
 }

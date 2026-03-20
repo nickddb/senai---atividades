@@ -19,5 +19,6 @@ public class ativid18 {
 
         System.out.printf("%.0fx + %.0f = 0\n", a , b);
         System.out.printf("X = %.2f",x);
+        in.close();
     }
 }

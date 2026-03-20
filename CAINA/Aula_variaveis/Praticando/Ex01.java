@@ -12,5 +12,6 @@ public class Ex01 {
         num = in.nextInt();
         
         System.out.println("O dobro de " + num + " é " + (num*2));
+        in.close();
     }
 }

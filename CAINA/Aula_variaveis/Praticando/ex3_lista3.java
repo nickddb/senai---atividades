@@ -16,5 +16,6 @@ public class ex3_lista3{
         else{
             System.out.println("REPROVADO!");
         }
+        in.close();
     }
 }
