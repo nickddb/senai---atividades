@@ -1,14 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;800&display=swap');
+
+
+h1{
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+h2, h4, .contatos{
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+h3, a, p{
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+h5{
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 10;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+
+
 .cabecalho{
     display: flex;
     align-items: center;
     justify-content: space-around;
     padding: 2vh 0;
+    text-decoration: none;  
     height: 3em;
 }
-.itens{
+
+.itens, a:visited{
+    text-decoration: none;
     display: flex;
     gap: 30px;
+    color: black;
+    font-weight: bold;
 }
+
+.itens a:hover{
+    text-decoration: none;
+    color: #BE580F;
+    transition: 0.5s;
+}
+
+.itens a:not(:hover){
+    text-decoration: none;
+    transition: 0.2s;
+}
+
 .botao{
     padding: 10px 20px;
     border: none;
@@ -19,9 +74,22 @@
     color: white;
 }
 
+.botao:hover{
+    opacity: 70%;
+    transition: 0.3s;
+}
+
+.botao:not(hover){
+    transition: 0.2s;
+}
+
+
+
 .cabecalho img{
     width: 200px;
 }
+
+
 
 
 
@@ -36,7 +104,24 @@
     position: relative;
     overflow: hidden;
     color: white;
+    text-align: center;
 }
+
+.hero-titulo {
+    color: white;
+    font-weight: 800;
+    font-size: 4rem;
+    text-align: center;
+    max-width: 900px;
+    line-height: 1.1;
+    flex-direction: column;
+    align-items: center;
+}
+
+.destaque {
+    color: #BE580F;
+}
+
 
 .hero::before {
     content: "";
@@ -53,25 +138,30 @@
     transform: scale(1.1);
 }
 
+
+
 .hero h1{
     color: white;
     font-weight: 800;
     font-size: 4rem;
-    padding-inline: 5em;
 }
+
 .hero h3{
     color: #BE580F;
     font-weight: 800;
     font-size: 4rem;
     padding-inline: 5em;
 }
+
 .hero p{
     color: rgb(255, 255, 255);
     padding-bottom: 1em;
 }
+
 *{
     margin:0;
 }
+
 .pesquisa{
     padding: 1.5vw;
     border: none;
@@ -81,12 +171,17 @@
     width: 400px;
     margin-right: 1em;
 }
+
 .input_container{
     padding: 0.5em;
     border: solid, 0.2vh;
     border-color: rgba(235, 213, 193, 0.553);
     border-radius: 15px;
     background-color: rgba(236, 232, 222, 0.199);
+}
+
+.input_container img{
+    width: 2em;
 }
 
 
@@ -97,6 +192,7 @@
     padding: 2vw;
     background-color: rgb(231, 230, 226);
 }
+
 .card{
     background-color: white;
     height: 28em;
@@ -104,40 +200,59 @@
     padding: 0 2vw;
     margin: 0 3vw 0 1vw;
 }
+
+.fundo a, .fundo a:visited{
+    text-decoration: none;
+    color:#BE580F;
+}
+
 .fundo{
     background-color: #E7E8E8;
     margin-top: 2em;
     border-radius: 15px;
     height: 260px;
 }
+
 .indo-card{
     padding-top: 1em;
 }
+
 .livros p{
     color: #BE580F;
     display: flex-start;
     font-size: 1rem;
 }
+
 .ver_mais{
     display: flex;
     justify-content: space-between;
     padding:3vw 2vw;
     align-items: center;
 }
-.ver_mais h3{
+
+.ver_mais a{
     color: #BE580F;
-    font-size: 1.3em;
+    font-size: 1em;
     font-weight: lighter;
+    text-decoration: none;
 }
+
+.ver_mais a:hover{
+    text-decoration: underline;
+}
+
 .ver_mais h2{
     font-weight: bold;
     font-size: 2em;
 }
+
 .carrd{
     display: flex;
     justify-content: space-around;
 }
+
 .card-livros p{
+    justify-content: space-between;
     justify-self: center;
     background-color: #fce1cea8;
     color: #BE580F;
@@ -145,68 +260,100 @@
     padding: 1vh 5vw;
     border-radius: 7px;
 }
+
+.card-livros p:hover{
+    background-color: #e7c6aea8;
+    transition: 0.4s;
+}
+
+.card-livros p:not(hover){
+    transition: 0.4s;
+}
+
 .titulo{
     color: black;
     padding: 0 0 1vh;
     font-size: 1.3rem;
 }
+
 .autor{
     font-size: 1rem;
     padding: 0 0 2vw;
+    color: #838487;
 }
+
 .card-livros img{
     width: 140px;
     border-radius: 10px;
-    margin: 1em;
+    margin: 1.5em 2em;
     box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
 }
+
+
+
+
+
 
 
 
 .connected{
     background-color: #F7EDEB;
 }
+
 .connected p{
     color: #BE580F;
     padding: 4em 0 1em 3em;
     font-weight: bold;
 }
+
 .info-eventos{
     display: flex;
     justify-content: space-between;
     padding: 0 3em 3em 3em;
 }
+
 .info-eventos button{
-    border: solid, 0.2vh;
+
+    border: solid, 0.1vh;
     border-color: #BE580F;
     background-color: white;
     border-radius: 10px;
     padding: 0 2em;
     font-weight: bold;
 }
-.card-carrossel{
-    padding: 2em 3em 3em 1.5em;
-    align-items: center;
+
+.card-carrossel {
+    padding: 1.5em;
     background-color: white;
     width: 20rem;
-    height: 12rem;
+    min-height: 15rem;
     margin-inline: 0.5em;
     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
-.data{
+
+.data {
     font-size: 0.7em;
     background-color: #F7EEE7;
-    width: 4rem;
-    height: 2rem;
+    width: 4.5rem;
+    height: auto;
     color: #BE580F;
-    padding-bottom: 3em;
+    padding: 0.5em;
     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
+
 .carrossel{
     padding: 0 1em 5em 1em;
     display: flex;
     justify-content: center;
 }
+
 .card-connected button{
     display: flex;
     color: #BE580F;
@@ -217,21 +364,44 @@
     font-weight: bold;
     font-size: 1.2em;
 }
+
 .card-titulo{
     font-weight: bold;
     font-size: 1.7em;
     padding-top: 0.5em;
 }
+
 .card-titulo-texto h2{
     font-weight: lighter;
     font-size: 1em;
     padding: 1rem 0 0.5rem 0;
 }
+
 .data h1, .data h2{
     justify-self: center;
 }
+
 .data h1{
     padding-top: 0.5em;
+}
+
+.card-connected img{
+    width: 2em;
+    opacity: 50%;
+}
+
+.card-connected:hover img {
+    opacity: 100%;
+    transition: 0.3s;
+}
+.card-connected:not(hover) img{
+    transition: 0.2s;
+}
+.card-topo {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
 }
 
 
@@ -239,78 +409,132 @@
 
 
 .help{
-    padding-inline: 5em;
+    padding-inline: 5em
 }
 
 .ajudar{
     background-color: #F8F7F5;
 }
+
 .ajudar h1{
     justify-self: center;
     padding-top: 3em;
     font-weight: bolder;
 }
+
 .ajudar h3{
     justify-self: center;
     padding-top: 1em;
     font-weight: lighter;
 }
+
 .ajuda{
-    justify-items: center;
-    margin-inline: 1em;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
 .ajuda h2{
     padding-bottom: 1em;
 }
+
 .ajuda h3{
-    padding-bottom: 2em;
-    font-size: 1em;
+    font-weight: lighter;
+    padding: 1rem 0 0.5rem 0;
+    font-size: 0.9em;
+    line-height: 1.4;
+    margin: 0 auto;
+    max-width: 22rem;
 }
+
 .ajudar-flex{
     padding: 4em 2em;
     display: flex;
     justify-content: space-around;
 }
 
+.ajuda-img{
+    padding-bottom: 3em;
+}
+
+.ajuda-img img{
+    width: 2.5em;
+    padding: 1em;
+    background-color: #BE580F;
+    border-radius: 100%;
+}
+
+
+
 
 
 .footer{
-    background-color: black;
+    background-color: #221810;
     color: #94A3B8;
     display: flex;
-    padding: 3em;
+    padding: 4em 6em 5em 3em;
+    justify-content: space-around;
 }
+
+.footer h1{
+    color: white;
+    padding-bottom: 1em;
+    font-size: 1.3em;
+}
+
 .horario{
     padding-inline: 3em;
+}
 
-}
-.horario h2, .links h2, .contato h2{
-    padding-bottom: 2em;
-}
 .horarios{
     display: flex;
     justify-content: space-between;
-    font-size: 0.7em;
-    font-weight: lighter;
+    font-weight: 100;
+    align-items: center;
+    padding-bottom: 1em;
+    font-size: 1em;
+    line-height: 1em;
+    gap: 6em;
 }
+
 .horarios h3{
     font-weight: bold;
     color: white;
 }
-footer h5{
-    background-color: black;
+
+.copyright{
+    position: relative;
+    background-color: #221810;
+    padding: 3em;
     color: #94A3B8;
-    width: 100%;
+    width: auto;
+    justify-items: center;
 }
+.copyright ::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 5%;
+    right: 5%;
+    height: 1px;
+    background-color: #1E293B;
+    border-radius: 0 0 5px 5px;
+}
+
+
 .info-footer img{
+    padding-bottom: 2em;
     width: 200px;
 }
+
 .info-footer h3{
     width: 13em;
     font-size: 1em;
     font-weight: lighter;
     padding-right: 2em;
 }
+
 .fa-instagram, .fa-twitter {
     border-radius: 100px;
     padding: 0.4em;
@@ -320,35 +544,49 @@ footer h5{
     margin-inline: 0.3em;
 }
 
+.fa-instagram:hover, .fa-twitter:hover{
+    background-color: #BE580F;
+    transition: 0.3s;
+}
+
+.links-info h3:hover{
+    color: #BE580F;
+    transition: 0.3s;
+}
+
+.fa-instagram:not(hover), .fa-twitter:not(hover){
+    transition: 0.3s;
+}
+
+links-info:not(hover){
+    transition: 0.3s;
+}
+
 .contato{
     padding-inline: 3em;
 }
+
 .contatos i{
     color: #BE580F;
-    font-size: 1rem;
-    margin-inline: 0.3em;
-    padding-inline: 2em;
+    padding-right: 1em;
     padding-block: 1em;
 }
-.contact-info {
-    margin-bottom: 10px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-.contact-info i {
-    padding-inline: 1em;
-    color: #333; 
-    width: 20px;
-    text-align: center;
+.info-footer h3{
+    padding-bottom: 0.5em;
 }
 .info-icons{
     padding-top: 1em;
 }
+
 .links a{
     text-decoration: none;
     color: #94A3B8;
     font-weight: lighter;
     font-size: 1em;
     padding: 0.1em;
+}
+
+.links{
+    padding-inline: 1.5em;
+    line-height: 1.1em;
 }
