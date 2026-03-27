@@ -1,6 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;800&display=swap');
+
 .header{
     background-color: #3B3734;
-    color: white;
     display: flex;
     justify-content: space-around;
     height: 50px;
@@ -10,12 +11,13 @@
 
 .header a{
     text-decoration: none;
-    color: white;
+    color: #AD9883;
 }
 
 .header a:hover{
     transform: scale(1.1);
     transition: 1s;
+    color: white;
 }
 
 .header a:not(hover){
@@ -78,6 +80,79 @@
 }
 
 
+.sobre1{
+    background-color: white;
+    height: 20em;
+    color: #3B3734;
+    align-content: center;
+    justify-items: center;
+    text-align: justify;
+    font-size: 1em;
+    padding-inline: 8em;
+    padding-bottom: 5em;
+}
+.destaque{
+    color: #a1a703;
+}
+.sobre1 h3{
+    padding-block: 0.3em;
+    font-weight: 100;
+}
+.sobre1 h1{
+    padding: 1em;
+    font-size: 2.5em;
+    color: #a1a703;
+}
+.sobre h2{
+    padding-bottom: 1em;
+    font-weight: 400;
+}
+.sobre-texto{
+    display: flex;
+    gap: 8em;
+    justify-content: baseline;
+}
+
+.sobre2{
+    background-color: #6C5C4D;
+    height: 32em;
+    color: white;
+}
+.soft_skills{
+    padding: 2em 2em 4em 2em;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+.caracteristica{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sobre2 h1{
+    justify-self: center;
+    padding-block: 1.5em;
+}
+.sobre2 h2{
+    font-weight: 600;
+    font-size: 1.8em;
+}
+.sobre2 h3{
+    font-weight: 100;
+}
+.sobre2 img{
+    width: 50em;
+    border-radius: 15px;
+}
+.sobre_imagem{
+    justify-self: center;
+}
+
+
+
+
+
 @keyframes appear {
     from {
         opacity: 0;
@@ -100,10 +175,11 @@
     }
 }
 
-.certf-fotos, .certificacoes h1{
+.certf-fotos, .certificacoes h1, .certificacoes-fotos h3{
     animation: appear;
     animation-timeline: view();
     animation-range: entry 0% cover 40%;
+    text-align: center;
 }
 
 .perfil img, .perfil-textos{
@@ -123,24 +199,26 @@
 .certificacoes-fotos img{
     height: 110px;
     width: 180px;
-    border-bottom: 1em;
-    border-style: solid;
-    border-color: #6C5C4D;
-    padding: 10e;
+    border: 2px solid #6C5C4D;
+    display: block;
+    margin: 0 auto 10px;
 }
 .certificacoes-fotos{
     display: grid;
-    justify-content: space-around;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto auto auto;
-    padding: 10em 0 ;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 10em 0;
+    justify-items: center;
+}
+.certificacoes-fotos > div {
+    grid-column: span 2;
+    padding: 1em;
+}
+
+.certificacoes-fotos > div:nth-child(3) {
+    grid-column: 2 / span 2;
 }
 .certificacoes-fotos img:last-child{
-    grid-column: 1 / span 2;
-    grid-row: 2 / span 3;
-    justify-self: center;
-    height: 200px;
-    width: 300px;
+    grid-column: 2;
 }
 
 
@@ -225,6 +303,10 @@
 .portfolio-texto:hover::after{
     transform: scaleX(1);
 }
+
+
+
+
 
 footer{
     background-color: #3B3734;

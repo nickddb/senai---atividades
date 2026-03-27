@@ -5,11 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Currículo Nicolle</title>
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
     <header>
         <div class="header">
             <a href="#perfil"><h1>Início</h1></a>
+            <a href="#sobre"><h1>Sobre e Formações</h1></a>
             <a href="#portfolio"><h1>Portfólio</h1></a>
             <a href="#certificacoes"><h1>Certificações</h1></a>
         </div>
@@ -25,18 +27,65 @@
         </div>
     </section>
 
+    <section id="sobre" class="sobre">
+        <div class="sobre1">
+            <h1>SOBRE MIM</h1>
+            <h2>Uma garota que gosta de ler e programar...</h2>
+            <div class="sobre-texto">
+                <div>
+                    <h3>Sou uma pessoa <span class="destaque">ávida por conhecimento</span> e sempre estou aberta a novas experiências que me ensinem diferentes habilidades.
+                    Me descreveria como uma aluna dedicada, em busca de aprender e descobrir coisas novas a todo momento, e por isso, participo de aulas complementares sempre que possível. </h3>
+                </div>
+                <div>
+                    <h3>Gosto de praticar línguas estrangeiras como o <span class="destaque">inglês</span> (nível avançado), e o <span class="destaque">espanhol</span> (nível intermediário), seja ouvindo, escrevendo ou até mesmo falando, principalmente diante de um mundo globalizado, em que a comunicação é a chave para o sucesso.
+                    Finalizei o ensino médio no <span class="destaque">SESI Votorantim</span> e meu curso de técnico em <span class="destaque">Análise de Desenvolvimento de Sistemas</span> no <span class="destaque">Senai Sorocaba</span>, realizando agora o curso superior, na mesma unidade.</h3>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="sobre2">
+            <h1>FORMAÇÕES ACADÊMICAS E PROFISSIONAIS</h1>
+            <div class="sobre_imagem">
+                <img src="./assets/imagem_ilustrativa.png" alt="">
+            </div>
+            <div class="soft_skills">
+                    <div class="característica">
+                        <div class="caracteristica-img">
+                        <img class="cara-icon" src="./assets/computer.png" alt="">
+                        </div>
+                        <h2>Ensino Médio</h2>
+                        <h3>SESI Votorantim</h3>
+                    </div>
+
+                    <div class="característica">
+                        <div class="caracteristica-img">
+                        <img class="cara-icon" src="./assets/door.png" alt="">
+                        </div>
+                        <h2>Cuso Técnico e Superior</h2>
+                        <h3>SENAI Gaspar Ricardo Júnior</h3>
+                    </div>
+
+                    <div class="característica">
+                        <div class="caracteristica-img">
+                        <img class="cara-icon" src="./assets/logical-thinking.png" alt="">
+                        </div>
+                        <h2>Profissional</h2>
+                        <h3>Estágio na 2RP Net</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
     <section id="portfolio" class="portfolio"> <!--Container-->
         <h1 class="portfolio-texto">PORTFÓLIO</h1>
         <div class="carrossel"> <!--Slide wrapper-->
             <div class="portfolio-carrossel"> <!--Slider-->
-                <img id="foto1" src="./assets/senai2.png" alt="">
-                <img id="foto2" src="./assets/senai.png" alt="">
-                <img id="foto3" src="./assets/churrascaria.png" alt="">
-            </div>
-            <div class="nav">
-                <a href="#foto1"></a>
-                <a href="#foto2"></a>
-                <a href="#foto3"></a>
+                <img id="foto1" src="./assets/senai2.png" alt=""><img id="foto2" src="./assets/senai.png" alt="">
+                <img id="foto3" src="./assets/churrascaria.png" alt=""></div><div class="nav">
+                <a href="#foto1"></a><a href="#foto2"></a><a href="#foto3"></a>
             </div>
         </div>
     </section>
@@ -45,11 +94,26 @@
         <div class="certificacoes">
             <h1>CERTIFICAÇÕES</h1>
             <div class="certificacoes-fotos">
-                <img class="certf-fotos" src="./assets/certf1.png" alt="">
-                <img class="certf-fotos" src="./assets/certf2.png" alt="">
-                <img class="certf-fotos" src="./assets/certf3.png" alt="">
-                <img class="certf-fotos" src="./assets/certf4.png" alt="">
-                <img class="certf-fotos" src="./assets/certf5.png" alt="">
+                <div>   
+                    <img class="certf-fotos" src="./assets/certf1.png" alt="">
+                    <h3>Fundamentos de TI: Hardware e Software (2024)</h3>
+                </div>
+                <div>
+                    <img class="certf-fotos" src="./assets/certf2.png" alt="">
+                    <h3>Javascript Básico (2025)</h3>
+                </div>
+                <div>
+                    <img class="certf-fotos" src="./assets/certf5.png" alt="" style="width: 250px; height: 180px;">
+                        <h3>Introdução à Linux (2026)</h3>
+                </div>
+                <div>
+                    <img class="certf-fotos" src="./assets/certf4.png" alt="">
+                    <h3>Fundamentos de Rede (2024)</h3>
+                </div>
+                <div>
+                    <img class="certf-fotos" src="./assets/certf3.png" alt="">
+                    <h3>MYSQL - Desenvolvedor (2025)</h3>
+                </div>
             </div>
         </div>
     </section>
