@@ -12,8 +12,6 @@ public class ativid20{
         x1 = in.nextDouble();
         x2 = in.nextDouble();
 
-         
-
         System.out.printf("%.0fx² + %.0fx + %.0f = 0\n", a, b, c);
 
         System.out.printf("%.0fx + %.0f = 0\n", a , b);

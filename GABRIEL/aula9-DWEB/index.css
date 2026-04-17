@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+body{
+    font-family: "Manrope", sans-serif;
+}
+/*mobile first*/
+/*Seção Mobile*/
+.image img{
+    display: none;
+}
+
+.mainContainer{
+    max-width: 100vw;
+    min-width: 320px;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.inputContainer{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.loginForm{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.esqueciSenha{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer{
+    display: flex;
+    gap: 5vw;
+}
+
+.google{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+*{
+    margin: 0;
+}
+
+/*Seção Web*/
+@media (min-width: 810px){
+    .image img{
+        display: block;
+    }
+    .image{
+        width: 60vw;
+        height: 100vh;
+        background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAlMVe8hXaMuq8j6VAhjQZB_YdveJ6cxFf_PR6qd05IUmUsfzFLvkAXd6XdJaEzp6yRwMKsGFJt2WhmdFAmAATTyMPca2P8sjlNjz4GziLd7W2N5Ex0oldVnTQBRlMYr6gK5SSEQN1WxGNmqRCp9EuyUbfoRD80zoD-o8aY09i4gm16hUs7BdvP4EW50vbOXz3qSlA1XJ68p0bOAaVfFgMysMjyZnF9gIY11YR-JvoOgxoM_FaEW8AxhvVffN6WjXSef4eiyUs0s5Zg");
+        background-size: cover;
+        background-position: center;
+        order:2;
+    }
+    .inputContainer{
+        padding: 5%;
+        width: 40vw;
+        order:1;
+    }
+    .mainContainer{
+        flex-wrap: nowrap;
+    }
+}
