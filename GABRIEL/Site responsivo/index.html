@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'fundo': '#F5EEFF',
+                        'titulo': '#4338CA',
+                        'icon-topo': '#4F46E5',
+                        'cor-cat': '#475569',
+                        'cor-texto': '#5F557F',
+                        'fundo-hero': '#FAF4FF',
+                        'icone-data': '#FFC1D6',
+                        'cor-data': '#8E0054',
+                        'underline-cor': '#B00D6A',
+                        'textaodohero': '#4A40E0',
+                        'cor-dopreto': '#32294F',
+                        'azul-do-botao': '#5D46F5',
+                        'branco-do-botao': '#9B8BFF'
+                    },
+                    fontFamily: {
+                        'headline': ['Plus Jakarta Sans', 'sans-serif'],
+                        'body': ['Inter', 'sans-serif'],
+                        'label': ['Inter', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <title>lojaSenai</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <header class="flex bg-white justify-between items-center px-10 py-5">
+            <button class="text-indigo-600 dark:text-indigo-400 scale-105 active:scale-95 transition-transform lg:hidden">
+                <span class="material-symbols-outlined text-icon-topo" data-icon="menu">menu</span>
+            </button>
+
+            <h1 class="text-titulo text-[24px] font-extrabold font-headline">The Digital Atelier</h1>
+
+            <div class="hidden lg:flex gap-[40px] cor-cat">
+                <p>Collections</p>
+                <p>New Arrivals</p>
+                <p>Journal</p>
+                <p>Our Story</p>
+            </div>
+
+            <div class="flex gap-[24px]">
+                <button class="text-indigo-600 dark:text-indigo-400 scale-105 active:scale-95 transition-transform">
+                  <span class="material-symbols-outlined text-icon-topo" data-icon="shopping_bag">shopping_bag</span>
+                </button>
+                <button class="hidden lg:block text-icon-topo text-center material-symbols-outlined text-indigo-600 hover:opacity-80 transition-all duration-300 text-icon-topo" data-icon="person">person</button>
+            </div>
+    </header>
+
+    <main class="bg-fundo-hero py-[45px]">
+        <div class="m-[24px]">
+            <p class=" text-center bg-icone-data text-[0.9rem] px-3 py-1 text-cor-data w-[190px] rounded-full">New Collection 2026</p>
+            <h2 class="text-[48px] font-black font-headline font-extrabold tracking-tight leading-[1.1] my-[23px] text-cor-dopreto">Curated <br> <span class="text-textaodohero ">Artistry</span> for the Modern Life.</h2>
+            <p class="text-cor-dopreto text-lg">Explore our latest drop of bespoke digital and physical artifacts, designed for those who value intentionality and high-end craftsmanship.</p>
+            
+            <div class="flex flex-col sm:flex-row gap-4 py-[43px]">
+                        <button class="bg-gradient-to-r from-azul-do-botao to-branco-do-botao text-white font-semibold py-3 px-10 rounded-full shadow-lg hover:opacity-90 transition">
+                            Shop Now
+                        </button>
+                        <button class="text-azul-do-botao font-semibold py-3 px-10 rounded-full border" ">
+                            View Lookbook
+                        </button>
+            </div>
+            
+            <div class="relative flex items-center justify-center">
+                <div>
+                    <img 
+                        src="assets/epelho.png" 
+                        alt="Móvel" 
+                        class="block rounded-2xl shadow-xl transform rotate-3 lg:hidden"
+                    />
+                    <img 
+                        src="assets/sala.png" 
+                        alt="Sala" 
+                        class="hidden lg:block w-[500px] rounded-[60px] shadow-2xl"
+                    />
+
+                    <div class="flex bsolute -bottom-10 -left-10 p-2 bg-white rounded-[30px] shadow-xl">
+                        <img 
+                            src="assets/vaso.png" 
+                            alt="Vaso" 
+                            class="hidden lg:w-48 rounded-[25px]"
+                        />
+
+                        <div class="absolute -bottom-5 -left-5 bg-white p-6 rounded-xl shadow-2xl w-64 border border-gray-100 lg:hidden">
+                            <p class="text-indigo-600 font-bold text-lg leading-tight ">
+                                "Simply the finest curation I've ever encountered."
+                            </p>
+                            <p class="text-gray-500 text-xs mt-4 tracking-widest uppercase">
+                                 — ARCHITECTURAL DAILY
+                            </p>
+                        </div>
+  
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <section class="bg-fundo">
+      <div class="mx-8">
+        <div class="flex items-center py-2 justify-center">
+          <h1 class="text-[30px] text-cor-dopreto font-headline font-bold underline decoration-underline-cor decoration-4">The Atelier Standard</h1>
+        </div>
+
+        <div class="bg-white my-16 p-10 rounded-xl">
+          <div class="pb-6">fotinha</div>
+          <div>
+            <p class="text-[20px] text-cor-dopreto font-headline font-bold pb-3">Artisan Verified</p>
+            <p class="text-cor-texto text-[15px]">Every item in our collection is hand-
+              vetted
+              by our global team of curators for
+              quality and soul.</p>
+          </div>
+        </div>
+
+        <div class="bg-white my-18 p-16 rounded-xl">
+          <div class="pb-6">fotinha</div>
+          <div>
+            <p class="text-[22px] text-cor-dopreto font-headline font-bold pb-3">Artisan Verified</p>
+            <p class="text-cor-texto text-[18px]">Every item in our collection is hand-vetted
+              by our global team of curators for
+              quality and soul.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+</body>
+</html> 
+
+
+----------------------------------------------------------
+essa é a cpnfiguração base 
+  	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!--Configuração do Tailwind-->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'exemplo-cor1':'#FFFFFF',
+                        'exemplo-cor2': '#4F46E5',
+                    },
+                    fontFamily: {
+                        'headline': ['Plus Jakarta Sans', 'sans-serif'],
+                        'body': ['Inter', 'sans-serif'],
+                        'label': ['Inter', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <title>The Digital Atelier</title>
