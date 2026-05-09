@@ -18,6 +18,7 @@ public class vetor{
 
         int n = matriz.length;
 
+        System.out.println("Matriz completa: ");
         for(int i=0; i<n; i++){
             for(int j=0; j<matriz[0].length; j++){
                 System.out.print(matriz[i][j] + " ");
@@ -25,10 +26,39 @@ public class vetor{
             System.out.println();
         }
 
+        //o length é natural da linha, do eixo X. Ao adicionar [0], especifica que trata-se da coluna!
+
+
+        //Acessar diagonal principal:
+        System.out.println("Diagonal principal: ");
+        for(int i=0; i<n; i++){
+            for(int j=0; j<matriz[0].length; j++){
+                if(i==j)
+                    System.out.print(matriz[i][j] + " ");
+                else
+                    System.out.println(" ");
+            }
+        }
+
         // OU
 
+        System.out.println(" ");
+        for(int i=0; i<n; i++){
+            System.out.println(matriz[i][i] + " ");
+        }
+
+        //Acessar diagonal secundária:
         for(int i=0; i<n; i++){
             System.out.print(matriz[i][n - 1 - i] + " ");
+        }
+
+        // OU
+
+        System.out.println(" ");
+        int count = matriz[0].length-1;
+        for(int i=0; i<n; i++){
+            System.out.println(matriz[i][count] + " ");
+            count--;
         }
 
     }
