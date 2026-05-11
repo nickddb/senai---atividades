@@ -15,9 +15,11 @@
                         'cor-cat': '#475569',
                         'cor-texto': '#5F557F',
                         'fundo-hero': '#FAF4FF',
+                        'fundo-bolinha': '#E2D7FF66',
                         'icone-data': '#FFC1D6',
                         'cor-data': '#8E0054',
                         'underline-cor': '#B00D6A',
+                        'bolinha-fundo': '#9837721A',
                         'textaodohero': '#4A40E0',
                         'cor-dopreto': '#32294F',
                         'azul-do-botao': '#5D46F5',
@@ -111,33 +113,70 @@
         </div>
     </main>
 
-    <section class="bg-fundo">
-      <div class="mx-8">
-        <div class="flex items-center py-2 justify-center">
-          <h1 class="text-[30px] text-cor-dopreto font-headline font-bold underline decoration-underline-cor decoration-4">The Atelier Standard</h1>
+    <section class="bg-fundo pt-20">
+        <div class="mx-8">
+            <h2 class="hidden lg:block font-bold pt-10 text-underline-cor">The Philosohy</h2>
+        <div class="flex items-center py-2 justify-center  lg:justify-start">
+            <h1 class="text-[30px] text-cor-dopreto font-headline font-bold underline decoration-underline-cor decoration-4">The Atelier Standard</h1>
+            <div class="hidden lg:flex ml-80">
+                <h2 class="text-cor-do-texto">Defined by three pillars of
+                    uncompromising excellence in digital and
+                    physical craft.</h2>
+            </div>
+        </div>
+        <div class="pb-10 lg:flex lg:gap-7">
+            <div class="bg-white my-16 p-10 rounded-xl">
+                <div class="bg-fundo rounded-2xl mr-[200px] mb-5 lg:mr-[250px]">
+                    <div class="p-3"><img src="./check.png" alt="check"></div>
+                </div>
+                <div>
+                <p class="text-[20px] text-cor-dopreto font-headline font-bold pb-3">Artisan Verified</p>
+                <p class="text-cor-texto text-[15px] lg:hidden">Every item in our collection is hand-
+                    vetted
+                    by our global team of curators for
+                    quality and soul.</p>
+                <p class="hidden lg:block text-cor-texto text-[15px]">Each piece is individually inspected
+                    and certified by master artisans to
+                    ensure heirloom quality.</p>
+                </div>
+            </div>
+        
+
+            <div class="bg-white my-16 p-10 rounded-xl">
+                <div class="bg-bolinha-fundo rounded-2xl mr-[200px] mb-5 lg:mr-[265px]">
+                    <div class="p-3"><img src="./leaf.png" alt="check"></div>
+                </div>
+                <div>
+                <p class="text-[20px] text-cor-dopreto font-headline font-bold pb-3">Sustainable Flow</p>
+                <p class="text-cor-texto text-[15px] lg:hidden">We prioritize carbon-neutral shipping and
+                    ethical production cycles in every
+                    partnership.</p>
+                <p class="hidden lg:block text-cor-texto text-[15px]">Conscious sourcing and ethical
+                    production cycles that prioritize our
+                    planet's ecological longevity.</p>
+                </div>
+            </div>
+
+            <div class="bg-white my-16 p-10 rounded-xl">
+                <div class="bg-bolinha-fundo rounded-2xl mr-[200px] mb-5 lg:mr-[250px] lg:hidden">
+                    <div class="p-3"><img src="./raio.png" alt="check"></div>
+                </div>
+                <div class="bg-fundo-bolinha rounded-2xl mr-[200px] mb-5 lg:mr-[250px]">
+                    <div class="p-3 lg:block"><img src="./mundo.png" alt="check"></div>
+                </div>
+                <div>
+                <p class="text-[20px] text-cor-dopreto font-headline font-bold pb-3">Global Priority</p>
+                <p class="text-cor-texto text-[15px] lg:hidden">Swift, white-glove delivery to over 45
+                    countries, ensuring your curation arrives
+                    perfectly.</p>
+                <p class="hidden lg:block text-cor-texto text-[15px]">White-glove delivery to any corner
+                    of the globe, handled with the
+                    utmost care and precision.</p>
+                </div>
+            </div>
         </div>
 
-        <div class="bg-white my-16 p-10 rounded-xl">
-          <div class="pb-6">fotinha</div>
-          <div>
-            <p class="text-[20px] text-cor-dopreto font-headline font-bold pb-3">Artisan Verified</p>
-            <p class="text-cor-texto text-[15px]">Every item in our collection is hand-
-              vetted
-              by our global team of curators for
-              quality and soul.</p>
-          </div>
         </div>
-
-        <div class="bg-white my-18 p-16 rounded-xl">
-          <div class="pb-6">fotinha</div>
-          <div>
-            <p class="text-[22px] text-cor-dopreto font-headline font-bold pb-3">Artisan Verified</p>
-            <p class="text-cor-texto text-[18px]">Every item in our collection is hand-vetted
-              by our global team of curators for
-              quality and soul.</p>
-          </div>
-        </div>
-      </div>
     </section>
 </body>
 </html> 
