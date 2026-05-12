@@ -9,7 +9,7 @@
             theme: {
                 extend: {
                     colors: {
-                         'fundo': '#F5EEFF',
+                        'fundo': '#F5EEFF',
                         'titulo': '#4338CA',
                         'icon-topo': '#4F46E5',
                         'cor-cat': '#475569',
@@ -23,7 +23,9 @@
                         'textaodohero': '#4A40E0',
                         'cor-dopreto': '#32294F',
                         'azul-do-botao': '#5D46F5',
-                        'branco-do-botao': '#9B8BFF'
+                        'branco-do-botao': '#9B8BFF',
+                        'card-fundo': '#10062D',
+                        'card-texto-cor': '#A5B4FC'
                     },
                     fontFamily: {
                         'headline': ['Plus Jakarta Sans', 'sans-serif'],
@@ -216,46 +218,80 @@
 
     <section class="bg-fundo pt-20">
         <div class="text-center mx-10">
-            <h1 class="text-[40px] text-cor-dopreto font-headline font-bold underline decoration-underline-cor decoration-4 lg:no-underline">Words from the Atelier</h1>
+            <h1 class="lg:hidden text-[40px] text-cor-dopreto font-headline font-bold underline decoration-underline-cor decoration-4 lg:no-underline">Words from the Atelier</h1>
         </div>
 
-        <div class="pb-10 mx-5 lg:flex lg:gap-7">
-            <div class="bg-white my-16 p-10 rounded-xl">
-                <div class="mr-[20px]"><img src="./aspas.png" alt=""></div> 
-                <div class="flex lg:mr-[250px]">
-                    <div class="py-3"><img src="./estrela.png" alt="check"></div>
-                    <div class="py-3"><img src="./estrela.png" alt="check"></div>
-                    <div class="py-3"><img src="./estrela.png" alt="check"></div>
-                    <div class="py-3"><img src="./estrela.png" alt="check"></div>
-                    <div class="py-3"><img src="./estrela.png" alt="check"></div>
+        <div class="pb-10 lg:px-10 lg:mx-5 lg:flex lg:gap-7">
+            <div class="lg:bg-card-fundo lg:block rounded-[64px]">
+                <div class="hidden lg:block text-center pr-80 mr-80">
+                    <h1 class="text-[40px] text-fundo font-headline font-semibold underline decoration-underline-cor decoration-4 lg:no-underline lg:pt-20">Words from the Atelier</h1>
                 </div>
-                <h2 class=" text-cor-dopreto text-[20px] font-medium italic py-5">"The attention to detail in every piece I've ordered is
-                    staggering. It feels less like shopping and more 
-                    like curated discovery."</h2>
-                <div>
-                <div class="flex">
-                    <div class="rounded-full justify-center mr-5"><img src="./duende.png" alt=""></div>
-                    <div class="block content-center">
-                        <p class="text-[20px] text-cor-dopreto font-headline font-bold">Elena Vance</p>
-                        <p class="text-cor-texto text-[15px] lg:hidden">INTERIOR DESIGNER</p>
+                <div class="mx-5 lg:flex lg:mx-10 mb-[2rem]">
+                    <div class="bg-white my-12 p-5 lg:pr-20 rounded-xl lg:bg-transparent lg:gap-10">
+                        <div class="mr-[20px] lg:hidden"><img src="./aspas.png" alt=""></div> 
+                        <div class="hidden lg:flex mr-[20px]"><img src="./aspas2.png" alt=""></div> 
+                        <div class="lg:hidden flex lg:mr-[250px]">
+                            <div class="py-3"><img src="./estrela.png" alt="check"></div>
+                            <div class="py-3"><img src="./estrela.png" alt="check"></div>
+                            <div class="py-3"><img src="./estrela.png" alt="check"></div>
+                            <div class="py-3"><img src="./estrela.png" alt="check"></div>
+                            <div class="py-3"><img src="./estrela.png" alt="check"></div>
+                        </div>
+
+                        <h2 class="lg:hidden lg:text-fundo lg:font-normal text-cor-dopreto text-[20px] font-medium italic py-5">"The attention to detail in every piece I've ordered is
+                            staggering. It feels less like shopping and more 
+                            like curated discovery."</h2>
+                        
+                        <h2 class="hidden lg:leading-loose lg:block lg:text-fundo lg:font-normal text-cor-dopreto text-[20px] font-normal italic py-5">"The attention to detail is bordering on
+                            obsessive. My Indigo Series watch isn't
+                            just a tool; it's a piece of kinetic art that I
+                            wear every single day."</h2>
+                        <div>
+                        <div class="flex">
+                            <div class="rounded-full justify-center mr-5 lg:hidden"><img src="./duende.png" alt=""></div>
+                            <div class="hidden lg:block pt-5 lg:rounded-full justify-center mr-5"><img class="rounded-full" src="./Elena_vance.png" alt=""></div>
+                            <div class="block content-center">
+                                <p class="text-[20px] text-cor-dopreto font-headline font-bold lg:text-fundo">Elena Vance</p>
+                                <p class="text-cor-texto text-[15px] lg:hidden">INTERIOR DESIGNER</p>
+                                <p class="hidden text-cor-texto text-[15px] lg:flex lg:text-card-texto-cor">Creative Director, V&A</p>
+                            </div>
+                        </div>
+                        </div>
                     </div>
-                </div>
-                </div>
-            </div>
+            
         
 
-            <div class="bg-white my-16 p-10 rounded-xl">
-                <div class="bg-bolinha-fundo rounded-2xl mr-[200px] mb-5 lg:mr-[265px]">
-                    <div class="p-3"><img src="./leaf.png" alt="check"></div>
-                </div>
-                <div>
-                <p class="text-[20px] text-cor-dopreto font-headline font-bold pb-3">Sustainable Flow</p>
-                <p class="text-cor-texto text-[15px] lg:hidden">We prioritize carbon-neutral shipping and
-                    ethical production cycles in every
-                    partnership.</p>
-                <p class="hidden lg:block text-cor-texto text-[15px]">Conscious sourcing and ethical
-                    production cycles that prioritize our
-                    planet's ecological longevity.</p>
+                    <div class="bg-white my-12 p-5 lg:pl-20 rounded-xl lg:bg-transparent lg:gap-10">
+                        <div class="mr-[20px] lg:hidden"><img src="./aspas.png" alt=""></div> 
+                        <div class="hidden lg:flex mr-[20px]"><img src="./aspas2.png" alt=""></div> 
+                        <div class="lg:hidden flex lg:mr-[250px]">
+                            <div class="py-3"><img src="./estrela.png" alt="check"></div>
+                            <div class="py-3"><img src="./estrela.png" alt="check"></div>
+                            <div class="py-3"><img src="./estrela.png" alt="check"></div>
+                            <div class="py-3"><img src="./estrela.png" alt="check"></div>
+                            <div class="py-3"><img src="./estrela.png" alt="check"></div>
+                        </div>
+
+                        <h2 class="lg:hidden lg:text-fundo lg:font-normal text-cor-dopreto text-[20px] font-medium italic py-5">"The attention to detail in every piece I've ordered is
+                            staggering. It feels less like shopping and more 
+                            like curated discovery."</h2>
+                        
+                        <h2 class="hidden lg:leading-loose lg:block lg:text-fundo lg:font-normal text-cor-dopreto text-[20px] font-normal italic py-5">"Finding products that balance
+                            sustainability with high-end design is
+                            rare. The Digital Atelier has mastered
+                            this intersection perfectly."</h2>
+                        <div>
+                        <div class="flex">
+                            <div class="rounded-full justify-center mr-5 lg:hidden"><img class="rounded-full" src="./user.png" alt=""></div>
+                            <div class="hidden lg:block pt-5 lg:rounded-full justify-center mr-5"><img class="rounded-full" src="./Julian_thorne.png" alt=""></div>
+                            <div class="block content-center">
+                                <p class="text-[20px] text-cor-dopreto font-headline font-bold lg:text-fundo">Julian Thorne</p>
+                                <p class="text-cor-texto text-[15px] lg:hidden">ARCHITECT</p>
+                                <p class="hidden text-cor-texto text-[15px] lg:flex lg:text-card-texto-cor">Principal Architect</p>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
