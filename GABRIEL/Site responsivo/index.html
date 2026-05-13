@@ -25,7 +25,17 @@
                         'azul-do-botao': '#5D46F5',
                         'branco-do-botao': '#9B8BFF',
                         'card-fundo': '#10062D',
-                        'card-texto-cor': '#A5B4FC'
+                        'card-texto-cor': '#A5B4FC',
+                        "on-error": "#ffefef",
+                        "surface": "#faf4ff",
+                        "on-surface-variant": "#5f557f",
+                        "limitado": "#b00d6a",
+                        "surface-variant": "#e2d7ff",
+                        "surface-container": "#ede4ff",
+                        "on-surface": "#32294f",
+                        "surface-container-low": "#f5eeff",
+                        'fundo_footer': '#0F172A',
+                        'footer-texto': '#94A3B8'
                     },
                     fontFamily: {
                         'headline': ['Plus Jakarta Sans', 'sans-serif'],
@@ -78,76 +88,74 @@
 
     </header>
 
-    <main class="bg-fundo-hero py-[45px]">
+    <main class="bg-fundo-hero py-10 lg:py-20 px-6 lg:px-20">
+        <div class="max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between gap-12">
+            
+            <div class="w-full lg:w-1/2">
+                <p class="bg-icone-data text-[0.8rem] px-4 py-1 text-cor-data w-fit rounded-full mb-6 lg:hidden">
+                    New Collection 2026
+                </p>
 
-        <div class="m-[24px]">
-
-            <p class="text-center bg-icone-data text-[0.9rem] px-3 py-1 text-cor-data w-[190px] rounded-full lg:hidden">
-                New Collection 2026
-            </p>
-
-            <h2 class="text-[48px] font-black font-headline font-extrabold tracking-tight leading-[1.1] my-[23px] text-cor-dopreto">
+                <h2 class="text-[48px] font-black font-headline font-extrabold tracking-tight leading-[1.1] my-[23px] text-cor-dopreto">
                 Curated <br>
                 <span class="text-textaodohero lg:text-cor-dopreto">Artistry</span>
-                for the <span class="text-cor-dopreto lg:text-textaodohero">Modern Life <span class="lg:hidden">.</span></span>
+                for the <br> <span class="text-cor-dopreto lg:text-textaodohero">Modern Life <span class="lg:hidden">.</span></span>
             </h2>
 
-            <p class="text-cor-dopreto text-lg">
-                Explore our latest drop of bespoke digital and physical artifacts,
-                designed for those who value intentionality and high-end craftsmanship.
-            </p>
 
-            <div class="flex flex-col lg:flex-row gap-4 py-[43px]">
+                <p class="text-cor-texto text-lg lg:max-w-md mb-8">
+                    Discover a symphony of design and utility. Every piece in our collection is an intentional statement for the discerning aesthetic.
+                </p>
 
-                <button class="bg-gradient-to-r from-azul-do-botao to-branco-do-botao text-white font-semibold py-3 px-10 rounded-full shadow-lg hover:opacity-90 transition">
-                    Shop Now
-                </button>
+                <div class="flex flex-col lg:flex-row gap-4 items-center">
+                    <button class="w-full w-auto bg-azul-do-botao text-white font-semibold py-3 px-8 rounded-full shadow-lg hover:bg-opacity-90 transition lg:hidden">
+                        Shop Now
+                    </button>
+                    <button class="w-full text-azul-do-botao font-semibold py-3 px-10 rounded-full border lg:hidden">
+                        View Lookbook
+                    </button>
 
-                <button class="text-azul-do-botao font-semibold py-3 px-10 rounded-full border">
-                    View Lookbook
-                </button>
-
+                    <button class="hidden lg:block w-full lg:w-auto bg-azul-do-botao text-white font-semibold py-3 px-8 rounded-full shadow-lg hover:bg-opacity-90 transition">
+                        Explore Collection
+                    </button>
+                    <button class="hidden lg:block text-azul-do-botao font-semibold py-3 px-3 underline decoration-blue-500 decoration-2 underline-offset-4">
+                        Watch Film
+                    </button>
+                </div>
             </div>
 
-
-            <div class="relative w-full lg:w-[700px] h-[520px] mx-auto">
-
-             
-                <img 
-                    src="assets/sala.png" 
-                    alt="Sala" 
-                    class="hidden lg:block w-[600px] h-[450px] object-cover rounded-[40px] absolute right-0 top-0 shadow-2xl"
-                />
-
+            <div class="hidden lg:block w-full lg:w-1/2 relative flex justify-center justify-end">
+                <div class="relative w-full max-w-[500px]">
+                    <img src="assets/sala.png" alt="Sala" class="w-full h-[400px] lg:h-[550px] object-cover rounded-[40px] shadow-2xl">
+                    
+                    <div class="hidden lg:block absolute -bottom-10 -left-10 lg:-left-20 w-[180px] w-[260px] p-2 bg-white rounded-3xl shadow-2xl transform">
+                        <img src="assets/vaso.png" alt="Vaso" class="w-full h-full object-cover rounded-2xl">
+                    </div>
+                </div>
+            </div>
+            <div class="relative w-fit mx-auto lg:hidden"> 
+    
                 <img 
                     src="assets/epelho.png" 
                     alt="Móvel" 
-                    class="block rounded-2xl shadow-xl transform rotate-3 lg:hidden"
+                    class="rounded-2xl shadow-xl transform rotate-3 block w-full max-w-[320px]" 
                 />
 
-                <img 
-                    src="assets/vaso.png" 
-                    alt="Vaso" 
-                    class="hidden lg:block w-[220px] h-[260px] object-cover rounded-2xl absolute border-8 border-white shadow-2xl"
-                />
-
-                <div class="absolute -bottom-4 -left-5 bg-white p-6 rounded-xl shadow-2xl w-64 border border-gray-100 lg:hidden">
-
-                    <p class="text-indigo-600 font-bold text-lg leading-tight">
+                <div class="absolute -bottom-6 -left-4 bg-white p-5 rounded-xl shadow-2xl w-56 border border-gray-100">
+                    <p class="text-indigo-600 font-bold text-md leading-tight">
                         "Simply the finest curation I've ever encountered."
                     </p>
-
-                    <p class="text-gray-500 text-xs mt-4 tracking-widest uppercase">
+                    <p class="text-gray-500 text-[10px] mt-3 tracking-widest uppercase">
                         — ARCHITECTURAL DAILY
                     </p>
-
                 </div>
 
             </div>
-
+            </div>
         </div>
-
     </main>
+
+    
     
     <section class="bg-fundo pt-20">
         <div class="mx-8">
@@ -163,7 +171,7 @@
         <div class="pb-10 lg:flex lg:gap-7">
             <div class="bg-white my-16 p-10 rounded-xl">
                 <div class="bg-fundo rounded-2xl mr-[200px] mb-5 lg:mr-[250px]">
-                    <div class="p-3"><img src="./check.png" alt="check"></div>
+                    <div class="p-3"><img src="assets/check.png" alt="check"></div>
                 </div>
                 <div>
                 <p class="text-[20px] text-cor-dopreto font-headline font-bold pb-3">Artisan Verified</p>
@@ -180,7 +188,7 @@
 
             <div class="bg-white my-16 p-10 rounded-xl">
                 <div class="bg-bolinha-fundo rounded-2xl mr-[200px] mb-5 lg:mr-[265px]">
-                    <div class="p-3"><img src="./leaf.png" alt="check"></div>
+                    <div class="p-3"><img src="assets/leaf.png" alt="check"></div>
                 </div>
                 <div>
                 <p class="text-[20px] text-cor-dopreto font-headline font-bold pb-3">Sustainable Flow</p>
@@ -195,10 +203,10 @@
 
             <div class="bg-white my-16 p-10 rounded-xl">
                 <div class="bg-bolinha-fundo rounded-2xl mr-[200px] mb-5 lg:mr-[250px] lg:hidden">
-                    <div class="p-3"><img src="./raio.png" alt="check"></div>
+                    <div class="p-3"><img src="assets/raio.png" alt="check"></div>
                 </div>
                 <div class="bg-fundo-bolinha rounded-2xl mr-[200px] mb-5 lg:mr-[250px]">
-                    <div class="hidden p-3 lg:block"><img src="./mundo.png" alt="check"></div>
+                    <div class="hidden p-3 lg:block"><img src="assets/mundo.png" alt="check"></div>
                 </div>
                 <div>
                 <p class="text-[20px] text-cor-dopreto font-headline font-bold pb-3">Global Priority</p>
@@ -215,6 +223,86 @@
         </div>
     </section>
 
+    <section class="bg-fundo-hero px-10 pt-20">
+        <div class="flex justify-between lg:justify-between items-center lg:my-20">
+            <h2 class="mr-40 text-cor-dopreto font-bold text-4xl lg:text-5xl">Featured Drops</h2>
+            <a class="hidden lg:flex text-textaodohero font-bold hover:translate-x-2 transition-transform inline-flex items-center gap-2" href="#">
+                View All Collections 
+                <span class="material-symbols-outlined">arrow_forward</span>
+            </a>
+        </div>
+        <div class="lg:hidden flex justify-between lg:justify-between items-center lg:my-20 gap-4 mb-16">
+            <p class="text-cor-texto text-xl lg:hidden">Limited quantities available.</p>
+            <a class="whitespace-nowrap shrink-0 underline decoration-2 underline-offset-8 text-textaodohero font-semibold hover:translate-x-2 transition-transform items-center lg:hidden" href="">Shop All</a>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div class="group cursor-pointer">
+                <div class="aspect-[3/4] bg-surface-container-low rounded-3xl overflow-hidden mb-6 relative">
+                    <img alt="Indigo Series 01" class="hidden lg:block  w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Minimalist luxury wristwatch with a deep indigo face and stainless steel mesh strap, studio lighting on a neutral textured" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBKgdthZ1q1R4UCHorJgsD5JJ_qTsfuCyBR0VmEJPzv1b0J9nZN-BUUlzupOITeQzmKLovaMuYs_y-e5Sk_PGVbyE-gfvljr5Q7osTTHxis4p-Wrk2v8dfeHIqQEo_wE6GpHlzC3mxAJQvZqVCmmiB5VwMHC2xiPZdEbOy4d4m22lJD0Z4DNQM0y1SeJmfFcJ21tzX73HvDUUNjqeqSjxHBKK_MT_tg3SBr7326kBdvl7B9uO2K6kus0sCHqurexh1LNga_x6Ux4sAL"/>
+                    <img src="assets/Art_print.png" class="lg:hidden w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="">
+                    <span class="hidden lg:flex absolute top-4 left-4 bg-limitado text-white text-[10px] font-bold tracking-widest uppercase px-3 py-1 rounded-full">Limited</span>
+                </div>
+                <p class="text-xs text-underline-cor font-semibold lg:hidden">LIMITED EDITION</p>
+                <div class="flex justify-between items-start">
+                    <div>
+                        <h4 class="font-headline font-bold text-lg mb-1">The Indigo Series 01</h4>
+                        <p class="hidden lg:flex text-sm text-on-surface-variant">Timepiece</p>
+                        <p class="font-headline font-bold text-textaodohero lg:hidden">$245.00</p>
+                    </div>
+                    <p class="hidden lg:block font-headline font-bold text-textaodohero">$450</p>
+                </div>
+            </div>
+
+            <div class="group cursor-pointer">
+                <div class="aspect-[3/4] bg-surface-container-low rounded-3xl overflow-hidden mb-6 relative">
+                    <img alt="Tidal Ceramic Vessel" class="hidden lg:flex w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Handcrafted indigo blue ceramic vase with organic wavy texture, presented in a soft studio lighting setting with elegant shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA2SEfROW8Pd5e37NLrBsYJDawZTvT7MGEC5aasq03naaAaV92wbFIiMISHYSvab1zRrEuI0SJ-N80nDI8lsBs90YYdkN0tRFP2hwwbpTTH18S5g4m95XpCnVnY1L3_P6lXLRWRZ-xzphTGi8_JnDV65Cth664-xKSkKGdzHc-XUuKeuc9wNO4zC9bTfkwhXXGdc5KqebQoVWFMr1FPFSXuFHCmY1QYuQ73J462aVdRN4D9IpqdU4grXaVaWpXb3C_fieG64cUwPJ1j"/>
+                    <img src="assets/Ceramic_vase.png" class="lg:hidden w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="">
+                </div>
+                <p class="text-xs text-cor-texto  lg:hidden">HANDCRAFTED</p>
+                <div class="flex justify-between items-start">
+                    <div>
+                        <h4 class="font-headline font-bold text-lg mb-1">Tidal Ceramic Vessel</h4>
+                        <p class="hidden lg:flex text-sm text-on-surface-variant">Home Objects</p>
+                        <p class="font-headline font-bold text-textaodohero lg:hidden">$120.00</p>
+                    </div>
+                    <p class="hidden lg:block font-headline font-bold text-textaodohero">$180</p>
+                </div>
+            </div>
+
+            <div class="group cursor-pointer">
+                <div class="aspect-[3/4] bg-surface-container-low rounded-3xl overflow-hidden mb-6 relative">
+                    <img alt="Atelier Chrono Silver" class="hidden lg:flex w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Polished silver chronometer watch with elegant dial detail, macro shot showcasing precision craftsmanship and light reflections" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA4j24J-w_i9YmvG4Eo01tzJY_7ZlEvDn9wiqC6dsgB5pL-Oj6i6cvt0yZMtQTTRySF8y8qOehZNjQJejr7eEta02MqvtAOirbYHS2KbxkRz9ix-KGmaT-SM9pODMSNaly4RYPq_X6sCaSBMNuqr1DY3TowQqX3k35PewiWSH1aDjIA1svSntS_f3EX56qEXh003AVVaZVmEYGgzllO83hpDXxiz_-8WdYoMdxcm4h7soGAdUpvksD-1Xa1F7VvJBL9x5YacK3JGzKy"/>
+                    <img src="assets/Watch.png" class="lg:hidden w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="">
+                </div>
+                <p class="text-xs text-underline-cor font-semibold lg:hidden">SELLING FAST</p>
+                <div class="flex justify-between items-start">
+                    <div>
+                        <h4 class="font-headline font-bold text-lg mb-1">Atelier Chrono Silver</h4>
+                        <p class="hidden lg:flex text-sm text-on-surface-variant">Timepiece</p>
+                        <p class="font-headline font-bold text-textaodohero lg:hidden">$380.00</p>  
+                    </div>
+                    <p class="hidden lg:block font-headline font-bold text-textaodohero">$620</p>
+                </div>
+            </div>
+
+            <div class="group cursor-pointer">
+                <div class="aspect-[3/4] bg-surface-container-low rounded-3xl overflow-hidden mb-6 relative">
+                    <img alt="Sonic Bloom Headphones" class="hidden lg:flex w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Sleek wireless headphones with a matte indigo finish and plush cushions, professional product photography on a marble platform" src="https://lh3.googleusercontent.com/aida-public/AB6AXuABKDN2a5OeXuSkHcgNwD7OgGSbgkuZA5lEJUr5VUhgdoy4d2YPLSc2A7kTiKapk-1_aCxw6xRe329e3is_HtvpPKdXgcpf_wP9MCr1yxICY_XYqw-iPP87hGIwVIe5OKcOsdxWfK4GyUI0R2fj2f_oUBmL6Dg9_ejT3durM1Xo3Xkt1CoI4NryuKcb1QCv4FRYfBW-gh_A_ipV6z6kfmqorBIpjqs_6BWRqVUrV89BQyB2F4np3dPEWL6sgZN60Y8S8m0jwT5BWokv"/>
+                    <img src="assets/Headphones.png" class="lg:hidden w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="">
+                </div>
+                <p class="text-xs text-cor-texto  lg:hidden">TECH ESSENTIALS</p>
+                <div class="flex justify-between items-start">
+                    <div>
+                        <h4 class="font-headline font-bold text-lg mb-1">Sonic Bloom Headphones</h4>
+                        <p class="hidden lg:flex text-sm text-on-surface-variant">Audio</p>
+                        <p class="font-headline font-bold text-textaodohero lg:hidden">$450.00</p> 
+                    </div>
+                <p class="hidden lg:block font-headline font-bold text-textaodohero">$340</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <section class="bg-fundo pt-20">
         <div class="text-center mx-10">
@@ -228,14 +316,14 @@
                 </div>
                 <div class="mx-5 lg:flex lg:mx-10 mb-[2rem]">
                     <div class="bg-white my-12 p-5 lg:pr-20 rounded-xl lg:bg-transparent lg:gap-10">
-                        <div class="mr-[20px] lg:hidden"><img src="./aspas.png" alt=""></div> 
-                        <div class="hidden lg:flex mr-[20px]"><img src="./aspas2.png" alt=""></div> 
+                        <div class="mr-[20px] lg:hidden"><img src="assets/aspas.png" alt=""></div> 
+                        <div class="hidden lg:flex mr-[20px]"><img src="assets/aspas2.png" alt=""></div> 
                         <div class="lg:hidden flex lg:mr-[250px]">
-                            <div class="py-3"><img src="./estrela.png" alt="check"></div>
-                            <div class="py-3"><img src="./estrela.png" alt="check"></div>
-                            <div class="py-3"><img src="./estrela.png" alt="check"></div>
-                            <div class="py-3"><img src="./estrela.png" alt="check"></div>
-                            <div class="py-3"><img src="./estrela.png" alt="check"></div>
+                            <div class="py-3"><img src="assets/estrela.png" alt="check"></div>
+                            <div class="py-3"><img src="assets/estrela.png" alt="check"></div>
+                            <div class="py-3"><img src="assets/estrela.png" alt="check"></div>
+                            <div class="py-3"><img src="assets/estrela.png" alt="check"></div>
+                            <div class="py-3"><img src="assets/estrela.png" alt="check"></div>
                         </div>
 
                         <h2 class="lg:hidden lg:text-fundo lg:font-normal text-cor-dopreto text-[20px] font-medium italic py-5">"The attention to detail in every piece I've ordered is
@@ -248,8 +336,8 @@
                             wear every single day."</h2>
                         <div>
                         <div class="flex">
-                            <div class="rounded-full justify-center mr-5 lg:hidden"><img src="./duende.png" alt=""></div>
-                            <div class="hidden lg:block pt-5 lg:rounded-full justify-center mr-5"><img class="rounded-full" src="./Elena_vance.png" alt=""></div>
+                            <div class="rounded-full justify-center mr-5 lg:hidden"><img src="assets/duende.png" alt=""></div>
+                            <div class="hidden lg:block pt-5 lg:rounded-full justify-center mr-5"><img class="rounded-full" src="assets/Elena_vance.png" alt=""></div>
                             <div class="block content-center">
                                 <p class="text-[20px] text-cor-dopreto font-headline font-bold lg:text-fundo">Elena Vance</p>
                                 <p class="text-cor-texto text-[15px] lg:hidden">INTERIOR DESIGNER</p>
@@ -262,14 +350,14 @@
         
 
                     <div class="bg-white my-12 p-5 lg:pl-20 rounded-xl lg:bg-transparent lg:gap-10">
-                        <div class="mr-[20px] lg:hidden"><img src="./aspas.png" alt=""></div> 
-                        <div class="hidden lg:flex mr-[20px]"><img src="./aspas2.png" alt=""></div> 
+                        <div class="mr-[20px] lg:hidden"><img src="assets/aspas.png" alt=""></div> 
+                        <div class="hidden lg:flex mr-[20px]"><img src="assets/aspas2.png" alt=""></div> 
                         <div class="lg:hidden flex lg:mr-[250px]">
-                            <div class="py-3"><img src="./estrela.png" alt="check"></div>
-                            <div class="py-3"><img src="./estrela.png" alt="check"></div>
-                            <div class="py-3"><img src="./estrela.png" alt="check"></div>
-                            <div class="py-3"><img src="./estrela.png" alt="check"></div>
-                            <div class="py-3"><img src="./estrela.png" alt="check"></div>
+                            <div class="py-3"><img src="assets/estrela.png" alt="check"></div>
+                            <div class="py-3"><img src="assets/estrela.png" alt="check"></div>
+                            <div class="py-3"><img src="assets/estrela.png" alt="check"></div>
+                            <div class="py-3"><img src="assets/estrela.png" alt="check"></div>
+                            <div class="py-3"><img src="assets/estrela.png" alt="check"></div>
                         </div>
 
                         <h2 class="lg:hidden lg:text-fundo lg:font-normal text-cor-dopreto text-[20px] font-medium italic py-5">"The attention to detail in every piece I've ordered is
@@ -282,8 +370,8 @@
                             this intersection perfectly."</h2>
                         <div>
                         <div class="flex">
-                            <div class="rounded-full justify-center mr-5 lg:hidden"><img class="rounded-full" src="./user.png" alt=""></div>
-                            <div class="hidden lg:block pt-5 lg:rounded-full justify-center mr-5"><img class="rounded-full" src="./Julian_thorne.png" alt=""></div>
+                            <div class="rounded-full justify-center mr-5 lg:hidden"><img class="rounded-full" src="assets/user.png" alt=""></div>
+                            <div class="hidden lg:block pt-5 lg:rounded-full justify-center mr-5"><img class="rounded-full" src="assets/Julian_thorne.png" alt=""></div>
                             <div class="block content-center">
                                 <p class="text-[20px] text-cor-dopreto font-headline font-bold lg:text-fundo">Julian Thorne</p>
                                 <p class="text-cor-texto text-[15px] lg:hidden">ARCHITECT</p>
@@ -299,34 +387,125 @@
 
 
     </section>
+    <section class="bg-fundo">
+            <div class="text-center mx-full h-full flex flex-col items-center justify-center">
+                <p class="hidden lg:block text-azul-do-botao font-body mt-12">EXCLUSIVES</p>
+
+                <h1 class="text-[36px] text-cor-dopreto font-headline font-bold lg:no-underline">Join the Inner Circle</h1>
+                <p class="text-cor-texto text-[18px] mt-4 mb-10 mx-10 lg:block text-[23px]">Receive exclusive access to new drops, artisan stories, and private sales directly in your inbox.</p>
+                <form class="flex flex-col gap-4">
+
+                        <input 
+                            type="email"
+                            placeholder="atelier@example.com"
+                            class="lg:hidden bg-white rounded-full mx-5 px-6 py-3 text-2xl"
+                        >
+
+                        <button 
+                            type="submit"
+                            class="lg:hidden bg-cor-dopreto text-white mx-5 rounded-full py-3 text-2xl font-semibold"
+                        >
+                            Subscribe
+                        </button>
+
+                </form>
+                <p class="lg:hidden text-cor-texto text-[14px] mt-6 mb-[96px] mx-10 ">RESPECTED PRIVACY. CURATED CONTENT ONLY.</p>
+            </div>
+        <div class="hidden lg:block max-w-3xl mx-auto pb-40">
+            <div class=" relative flex items-center bg-fundo-bolinha rounded-full p-1 pl-6 shadow-inner border border-white/50">
+                <input 
+                    type="email" 
+                    placeholder="Enter your email" 
+                    class="bg-transparent w-full outline-none text-cor-texto placeholder:text-cor-texto/60 text-lg"
+                >
+                <button class="bg-azul-do-botao text-white font-bold py-3 px-10 rounded-full hover:opacity-90 transition shadow-lg active:scale-95">
+                    Subscribe
+                </button>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-fundo_footer border-t border-fundo-bolinha pt-16 pb-10 px-10">
+        <div class=" mx-auto">
+            
+            <div class="lg:hidden flex flex-col items-start">
+                <h2 class="text-white text-[24px] font-extrabold font-headline mb-8">
+                    The Digital Atelier
+                </h2>
+                <p class="text-footer-texto mb-5 lg:hidden">Elevating the everyday through curated aristry and sustainable craftsmanship since 2014</p>
+                <div class="flex flex-col gap-6 text-cor-texto font-medium mb-12">
+                    <div class="flex gap-4 text-icon-topo">
+                        <i class="fa-brands fa-instagram text-xl"></i>
+                        <i class="fa-brands fa-x-twitter text-xl"></i>
+                    </div>
+                    <p class="text-azul-do-botao font-bold uppercase text-xs tracking-widest">COLLECTION</p>
+                    <p>NEW ARRIVALS</p>
+                    <p>BESTSELLERS</p>
+                    <p>ART PRINTS</p>
+                </div>
+
+                <div class="flex flex-col gap-6 text-cor-texto font-medium mb-12">
+                    <p class="text-azul-do-botao font-bold uppercase text-xs tracking-widest">COMPANY</p>
+                    <p>ABOUT</p>
+                    <p>SUSTAINABILITY</p>
+                    <p>JOURNAL</p>
+                </div>
+
+                <div class="flex flex-col gap-6 text-cor-texto font-medium mb-12">
+                    <p class="text-azul-do-botao font-bold uppercase text-xs tracking-widest">LEGAL</p>
+                    <p>PRIVACY</p>
+                    <p>SUPPORT</p>
+                    <p>TERMS</p>
+                </div>
+
+                <div class="w-full pt-10 flex justify-between items-center">
+                    <button class="flex items-center justify-center gap-3 w-full max-w-md py-4 px-8 rounded-full bg-gradient-to-r from-[#6366F1] to-[#A78BFA] shadow-lg transition-transform active:scale-95">
+                    <svg 
+                        class="w-5 h-5 text-white fill-current" 
+                        viewBox="0 0 24 24" 
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <path d="M13 10V3L4 14H11V21L20 10H13Z" />
+                    </svg>
+
+                    <span class="text-white font-bold text-[16px] tracking-tight">
+                        Quick Shop Collections
+                    </span>
+                </button>
+                </div>
+            </div>
+
+            <div class="flex justify-between items-center"> 
+            <div class="hidden lg:flex">
+                <h2 class="text-white text-[24px] font-extrabold font-headline mb-6">
+                    The Digital Atelier
+                </h2>
+            </div>
+
+            <div class="hidden lg:flex gap-20">
+                <div class="flex flex-col gap-4 items-center">
+                    <p class="text-cor-texto font-bold uppercase text-xs tracking-widest mb-2 text-center">Privacy Policy</p>
+                </div>
+                <div class="flex flex-col gap-4 items-center">
+                    <p class="text-cor-texto font-bold uppercase text-xs tracking-widest mb-2 text-center">Terms of Service</p>
+                </div>
+                <div class="flex flex-col gap-4 items-center">
+                    <p class="text-cor-texto font-bold uppercase text-xs tracking-widest mb-2 text-center">Shipping & Returns</p>
+                </div>
+                <div class="flex flex-col gap-4 items-center">
+                    <p class="text-cor-texto font-bold uppercase text-xs tracking-widest mb-2 text-center">Instagram</p>
+                </div>
+                <div class="flex flex-col gap-4 items-center">
+                    <p class="text-cor-texto font-bold uppercase text-xs tracking-widest mb-2 text-center">Contact</p>
+                </div>
+            </div>
+        </div>
+                <div class="hidden lg:flex text-sm text-cor-texto">
+                    <p>© 2026 The Digital Atelier. All rights reserved.</p>
+                </div>
+            </div>
+
+        </div>
+    </footer>
 
 </body>
 </html>
-
-
-----------------------------------------------------------
-essa é a cpnfiguração base 
-  	<meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!--Configuração do Tailwind-->
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        'exemplo-cor1':'#FFFFFF',
-                        'exemplo-cor2': '#4F46E5',
-                    },
-                    fontFamily: {
-                        'headline': ['Plus Jakarta Sans', 'sans-serif'],
-                        'body': ['Inter', 'sans-serif'],
-                        'label': ['Inter', 'sans-serif']
-                    }
-                }
-            }
-        }
-    </script>
-    <title>The Digital Atelier</title>
