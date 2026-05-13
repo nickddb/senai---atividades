@@ -397,3 +397,13 @@ STRING_AGG(p.nome, ', ' ORDER BY p.nome) AS projetos
 
 --Evita valores iguais na apresentação
 SELECT DISTINCT
+
+
+-- cria VIEW
+CREATE VIEW vw_total_pedidos AS
+select ped.id_pedido, cli.nome, 
+	   SUM(itens.quantidade * itens.valor_unitario) AS valor_total
+FROM pedidos ped
+INNER JOIN clientes cli ON ped.id_cliente = cli.id_cliente
+INNER JOIN itens_pedido itens ON itens.id_pedido = ped.id_pedido
+GROUP BY ped.id_pedido, cli.nome
