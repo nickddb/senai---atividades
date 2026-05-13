@@ -407,3 +407,79 @@ FROM pedidos ped
 INNER JOIN clientes cli ON ped.id_cliente = cli.id_cliente
 INNER JOIN itens_pedido itens ON itens.id_pedido = ped.id_pedido
 GROUP BY ped.id_pedido, cli.nome
+
+select * from vw_total_pedidos;
+
+select * from vw_total_pedidos
+where valor_total BETWEEN 1000 AND 2000;
+
+
+CREATE OR REPLACE VIEW vw_total_pedidos AS
+select ped.id_pedido, cli.nome, 
+	   SUM(itens.quantidade * itens.valor_unitario) AS valor_total
+FROM pedidos ped
+INNER JOIN clientes cli ON ped.id_cliente = cli.id_cliente
+INNER JOIN itens_pedido itens ON itens.id_pedido = ped.id_pedido
+GROUP BY ped.id_pedido, cli.nome;
+
+
+
+CREATE OR REPLACE FUNCTION fn_Valor_total(
+	p_id_pedido NUMERIC
+)
+RETURNS NUMERIC
+LANGUAGE plpgsql
+AS
+$$
+	DECLARE
+		valor_total NUMERIC;
+	BEGIN
+		SELECT SUM(quantidade * valor_unitario) INTO valor_total
+		FROM itens_pedido
+		WHERE id_pedido = p_id_pedido;
+
+		RETURN valor_total;
+	END;
+$$;
+
+
+
+CREATE OR REPLACE PROCEDURE pr_baixar_estoque(
+    p_id_produto INTEGER,
+    p_quantidade INTEGER
+)
+LANGUAGE plpgsql
+AS
+$$
+BEGIN
+
+    UPDATE produtos
+    SET estoque = estoque - p_quantidade
+    WHERE id_produto = p_id_produto;
+
+END;
+$$;
+
+--aumenta de 5 em 5
+CALL pr_baixar_estoque(1, -5);
+select * from produtos;
+
+
+CREATE OR REPLACE PROCEDURE pr_baixar_estoque(
+    p_id_produto INTEGER,
+    p_quantidade INTEGER
+)
+LANGUAGE plpgsql
+AS
+$$
+BEGIN
+
+    UPDATE produtos
+    SET estoque =  (SELECT MAX(0, estoque - p_quantidade))
+    WHERE id_produto = p_id_produto;
+
+END;
+$$;
+
+CALL pr_baixar_estoque(1, 100);
+SELECT * from produtos ORDER BY id_produto;
