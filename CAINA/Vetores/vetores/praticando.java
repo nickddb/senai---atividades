@@ -8,9 +8,9 @@ public class praticando {
     
     int [] vetor = new int [10];
     
-    for(int i=0; i<=10; i++){
+    for(int i=0; i<vetor.length; i++){
         int input = in.nextInt();
-        vetor.add(input);
+        vetor[i] = input;
     }
     
     }
