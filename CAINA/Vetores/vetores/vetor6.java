@@ -1,13 +1,12 @@
-//Faça um programa que leia um valor N. Este N será o tamanho 
-// de um vetor X[N]. A seguir, leia cada um dos valores de X, 
-// encontre o menor elemento deste vetor e a sua posição dentro do 
-// vetor, mostrando esta informação.
+//Faça um programa que leia um vetor N[20]. Troque a seguir, o 
+// primeiro elemento com o último, o segundo elemento com o 
+// penúltimo, etc., até trocar o 10º com o 11º. Mostre o vetor modificado.
 
 
 package vetores;
 import java.util.Scanner;
 
-public class vetor5{
+public class vetor6{
     public static void main(String[] args) throws Exception{
     Scanner in = new Scanner(System.in);
 
